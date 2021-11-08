@@ -73,9 +73,9 @@ These are Windows centric instructions.
 
 ## Working in CloudFormation
 
-See Notes for two helpful extensions
-If you have CloudFormation extension, you can do `Control-Shift-P` for command palette in VSC and then type CloudFormation, you should see a command named "AWS: Create New CloudFormation Template"
-This gives you a barebones starting layout. Save that file with the following contens, as, for example, SampleCloudFormationTemplate.yaml.
+See Notes for two helpful extensions.
+
+If you have installed recommend extensions, you can do `Control-Shift-P` for command palette in VSC and then type CloudFormation, you should see a command named "AWS: Create New CloudFormation Template". This gives you a barebones starting layout. Save that file with the following contens, as, for example, SampleCloudFormationTemplate.yaml.
 
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
