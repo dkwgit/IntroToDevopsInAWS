@@ -28,7 +28,7 @@ Here is the main concept this is about:
 The idea is that any infrastructure you deploy ought to be deployable via automation, so that it is
 
 1. Always deployed programmatically, not via a user haphazardly clicking in the console.
-1. Deployed in a controlled fashion, from source code artifacts, under repeatable, well known governance. This intro does not deal with governance, but for work in an enterprise context, it's actually a vital elements.
+1. Deployed in a controlled fashion, from source code artifacts, under repeatable, well known governance. This intro does not deal with governance, but for work in an enterprise context, governance is perhaps the most vital element of DevOps.
 
 ### Declarative infrastructure as code tools
 
