@@ -109,9 +109,14 @@ Invoke above via following in powershell terminal (which you can get via `Contro
 Deploy-CFStack -BucketName "a-unique-bucketname-xyz467" -FileName SampleCloudFormationTemplate.yaml -StackName "MyFirstStack"
 ```
 
+- Go to CloudFormation in the console and view the stack that you just created.
+- In CloudFormation, check out the resources of the stack, in CloudFormation. Your bucket should be there as a resource.
+- Go look in S3 in the console and see your bucket that way, as well.
+
 ## Cleanup
 
-- Delete your S3 buckets when done!
+- Delete your CloudFormation stack when done
+- Delete any S3 buckets you do not want to keep that were not under CloudFormation control
 
 ## Notes
 
