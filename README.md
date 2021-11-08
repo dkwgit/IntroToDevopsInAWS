@@ -15,6 +15,8 @@ These instructions are meant to get you started with basic tools and provisionin
   - Familiarizing yourself with running AWS CLI commands against an account
   - Working in CloudFormation
   - Cleanup
+    - What needs clean up
+    - How to clean up
   - Notes
 
 ## Concepts
@@ -142,7 +144,7 @@ function Deploy-CFStack
     )
 
     aws s3 cp $FileName "s3://$BucketName"
-    aws cloudformation create-stack --stack-name $StackName --template-url "http://$BucketName.s3.us-east-1.amazonaws.com/$FileName"
+    aws CloudFormation create-stack --stack-name $StackName --template-url "http://$BucketName.s3.us-east-1.amazonaws.com/$FileName"
 }
 ```
 
@@ -160,8 +162,14 @@ Deploy-CFStack -BucketName "a-unique-bucketname-xyz467" -FileName SampleCloudFor
 
 ## Cleanup
 
+### What needs clean up
+
 - Delete your CloudFormation stack when done
 - Delete any S3 buckets you do not want to keep that were not under CloudFormation control
+
+### How to clean up
+
+This should really be done in scripts!! Delete the CloudFormation template via script. What aws cli command is this? Delete extraneous S3 buckets via script.  What command?
 
 ## Notes
 
