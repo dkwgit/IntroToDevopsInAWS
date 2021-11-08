@@ -2,6 +2,12 @@
 
 ## Setup
 
+These are Windows centric instructions.
+
+1. Install Powershell
+   - [For Windows, simplest to use the MSI package](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows)
+1. Install Git
+   - [For Windows](https://gitforwindows.org/)
 1. [Setup an AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
    - register it to YOURGMAIL+mainAWSAccount@gmail.com
 1. [Get Visual Studio Code](https://code.visualstudio.com)
@@ -10,43 +16,58 @@
     - AWS Toolkit
     - AWS CLI Configure
 1. [Console login](https://aws.amazon.com/console)
-1. Familiarizing yourself
-    - try creating a programmatic IAM user with a an access key and secret
-    - put those in your AWS CLI credentials file %USERPROFILE%/.aws (after installing aws CLI)
-      - The command palette in VSC `Control-Shift-P` will have a AWS credential file open command from the 'AWS CLI Configure' extension, which is super helpful for entering credentials
+1. Clone this repo to your local system for some examples to work with
 
-Example (change to **YOUR values** for the programmatic IAM user)
->[default]
->
->aws_access_key_id=KEYVALUE
->
->aws_secret_access_key=SECRETVALUE
->
->region=us-east-1
+   - establish a folder %USERPROFILE%/repos. Go to %USERPROFILE% in windows explore. Make a folder 'repos'
+   - open a powershell window `WindowsKey-Q` type 'Powershell'. Open Powershell.
+   - type `cd "$($env:USERPROFILE)\repos"`
+   - type `git clone https://github.com/dkwgit/IntroToDevopsInAWS.git`
 
-- try creating a bucket using an AWS cli command `aws s3 mb s3://someuniquestring-sample-bucket-for-tim` (msut use a different bucket name)
-- You can also try scripting out something in Powershell with a saved powershell script (Add-Bucket.ps1):
+1. Open Visual Studio Code to this newly downloaded project
+
+- `cd IntroToDevopsInAWS`.  You should now be in c:\Users\YOURUSERNAME\repos\IntroToDevopsInAWS
+- `code .` this opens the current folder in Visual Studio Code
+
+## Familiarizing yourself with running AWS CLI commands against an account
+
+- try creating a programmatic IAM user in your AWS account via the console, with a an access key and secret
+- put those in your AWS CLI credentials file %USERPROFILE%/.aws (after installing aws CLI)
+- the 'AWS CLI Configure' extension will open the credentials file for you:
   
-```Powershell
-function Add-Bucket
-{
-    param(
-      [Parameter(Mandatory=$true)][string]$BucketName
-    )
+  the command palette in VSC `Control-Shift-P` will have a AWS credential file open command from the 'AWS CLI Configure' extension, which is super helpful for entering credentials
 
-    aws s3 mb "s3://$BucketName"
-}
-```
+  Example (change to **YOUR values** for the programmatic IAM user)
+  >[default]
+  >
+  >aws_access_key_id=KEYVALUE
+  >
+  >aws_secret_access_key=SECRETVALUE
+  >
+  >region=us-east-1
 
-Invoke above via following in powershell terminal (which you can get via `Control-Shift-Backtick`)
+- try creating a bucket using an AWS cli command `aws s3 mb s3://sample-uniquebucketname-qwerty-875` (**only an example must use a globally unique bucket name**)
+- You can also try scripting out something in Powershell with a saved powershell script (Add-Bucket.ps1):
 
-```Powershell
-. .\Add-Bucket.ps1
+  ```Powershell
+  function Add-Bucket
+  {
+      param(
+        [Parameter(Mandatory=$true)][string]$BucketName
+      )
 
-$newBucket = "someuniquestring-another-bucket-example"
+      aws s3 mb "s3://$BucketName"
+  }
+  ```
 
-Add-Bucket -BucketName $newBucket
-```
+  Invoke above via following in powershell terminal (which you can get via `Control-Shift-Backtick`)
+
+  ```Powershell
+  . .\Add-Bucket.ps1
+
+  $newBucket = "sample-uniquebucketname-zxcvb-3874" # **Only an example must use a globally uniqe bucket name**
+
+  Add-Bucket -BucketName $newBucket
+  ```
 
 ## Working in CloudFormation
 
@@ -87,6 +108,10 @@ Invoke above via following in powershell terminal (which you can get via `Contro
 
 Deploy-CFStack -BucketName "a-unique-bucketname-xyz467" -FileName SampleCloudFormationTemplate.yaml -StackName "MyFirstStack"
 ```
+
+## Cleanup
+
+- Delete your S3 buckets when done!
 
 ## Notes
 
