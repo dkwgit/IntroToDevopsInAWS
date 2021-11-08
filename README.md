@@ -2,6 +2,14 @@
 
 These instructions are meant to get you started with basic tools and provisioning approaches against an AWS account. The goal is to equip you to provision AWS infrastructure in a scripted fashion. The tools and approaches are only some of many ways of doing this kind of thing, but are definitely mainstream choices that will equip you well for work in a variety of contexts.
 
+- Getting going with DevOps against AWS
+  - Concepts
+  - Setup
+  - Familiarizing yourself with running AWS CLI commands against an account
+  - Working in CloudFormation
+  - Cleanup
+  - Notes
+
 ## Concepts
 
 Currently, this intro will just get you going with tools and basic setup.  The real DevOps concepts to be dealt with don't get a lot of treatment (yet). However, those concepts are the most important. (But it's also hard to learn about them if you don't have some tools ready and places to provision infrastructures to).
