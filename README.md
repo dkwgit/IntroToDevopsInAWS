@@ -7,6 +7,10 @@ These instructions are meant to get you started with basic tools and provisionin
 - Getting going with DevOps against AWS
   - Table of Contents
   - Concepts
+    - Infrastructure as code
+    - Declarative infrastructure as code tools
+    - Concepts not yet being dealt with
+      - How to put automation in a formal CI/CD context
   - Setup
   - Familiarizing yourself with running AWS CLI commands against an account
   - Working in CloudFormation
@@ -17,16 +21,28 @@ These instructions are meant to get you started with basic tools and provisionin
 
 Currently, this intro will just get you going with tools and basic setup.  The real DevOps concepts to be dealt with don't get a lot of treatment (yet). However, those concepts are the most important. (But it's also hard to learn about them if you don't have some tools ready and places to provision infrastructures to).
 
-Here is the main concept this is about: **Infrastructure as code**.
+Here is the main concept this is about: 
+
+### Infrastructure as code
 
 The idea is that any infrastructure you deploy ought to be deployable via automation, so that it is
 
-1. Always deployed the same way
+1. Always deployed programmatically, not via a user haphazardly clicking in the console.
 1. Deployed in a controlled fashion, from source code artifacts, under repeatable, well known governance. This intro does not deal with governance, but for work in an enterprise context, it's actually a vital elements.
 
-Concepts not yet being dealt with.
+### Declarative infrastructure as code tools
 
-1. How to put automation in a formal CI/CD context.
+Usually, a declarative provisioning tool, such as AWS's CloudFormation (or, as an exapmle of a cloud agnostic tool, Terraform) is involved. However, the simplest form of infrastructure as code might just provision infrastructure via a scripting approach, which is at least automated and repeatable. There are distinct benefits to a provisioning tool, though. Such a tool can:
+
+1. track dependencies between infrastructure resources, and protect dependent resources by refusing to delete other resources (which the dependent resources need).
+1. document the state of resources more fully (the tool itself is a place to inspect the intended state)
+1. detect drift (has a resource changed since it was provisioned?)
+1. provide a careful update path when a resource is changing. The update path can rollback to a known good state, if the tool detects that an update will fail.
+1. provide some reusable modularization for frequent provisioning tasks (not a CloudFormation strength)
+
+### Concepts not yet being dealt with
+
+#### How to put automation in a formal CI/CD context
 
 ## Setup
 
