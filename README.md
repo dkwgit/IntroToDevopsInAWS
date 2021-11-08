@@ -33,6 +33,7 @@ These are Windows centric instructions.
 ## Familiarizing yourself with running AWS CLI commands against an account
 
 - try creating a programmatic IAM user in your AWS account via the console, with a an access key and secret
+- you'll want to familiarize yourself with [AWS CLI credentials and config files](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html). 
 - put those in your AWS CLI credentials file %USERPROFILE%/.aws (after installing aws CLI)
 - the 'AWS CLI Configure' extension will open the credentials file for you:
   
