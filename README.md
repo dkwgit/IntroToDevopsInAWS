@@ -25,8 +25,8 @@ These are Windows centric instructions.
 
 1. Open Visual Studio Code to this newly downloaded project
 
-- `cd IntroToDevopsInAWS`.  You should now be in c:\Users\YOURUSERNAME\repos\IntroToDevopsInAWS
-- `code .` this opens the current folder in Visual Studio Code
+   - `cd IntroToDevopsInAWS`.  You should now be in c:\Users\YOURUSERNAME\repos\IntroToDevopsInAWS
+   - `code .` this opens the current folder in Visual Studio Code
 
 ## Familiarizing yourself with running AWS CLI commands against an account
 
