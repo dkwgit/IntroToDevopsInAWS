@@ -1,5 +1,7 @@
 # Getting going with DevOps against AWS
 
+These instructions are meant to get you started with basic tools and provisioning approaches against an AWS account. The goal is to equip you to provision AWS infrastructure in a scripted fashion. The tools and approaches are only some of many ways of doing this kind of thing, but are definitely mainstream choices that will equip you well for work in a variety of contexts.
+
 ## Setup
 
 These are Windows centric instructions.
