@@ -19,9 +19,9 @@ These instructions are meant to get you started with basic tools and provisionin
 
 ## Concepts
 
-Currently, this intro will just get you going with tools and basic setup.  The real DevOps concepts to be dealt with don't get a lot of treatment (yet). However, those concepts are the most important. (But it's also hard to learn about them if you don't have some tools ready and places to provision infrastructures to).
+Currently, this intro will just get you going with tools and basic setup.  The real DevOps concepts to be dealt with don't get a lot of treatment (yet). However, those concepts are the most important. (But it's also hard to learn about them if you don't have some tools ready and places to provision infrastructure to).
 
-Here is the main concept this is about: 
+Here is the main concept this is about:
 
 ### Infrastructure as code
 
