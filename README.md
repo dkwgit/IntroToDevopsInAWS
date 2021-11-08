@@ -2,6 +2,21 @@
 
 These instructions are meant to get you started with basic tools and provisioning approaches against an AWS account. The goal is to equip you to provision AWS infrastructure in a scripted fashion. The tools and approaches are only some of many ways of doing this kind of thing, but are definitely mainstream choices that will equip you well for work in a variety of contexts.
 
+## Concepts
+
+Currently, this intro will just get you going with tools and basic setup.  The real DevOps concepts to be dealt with don't get a lot of treatment (yet). However, those concepts are the most important. (But it's also hard to learn about them if you don't have some tools ready and places to provision infrastructures to).
+
+Here is the main concept this is about: **Infrastructure as code**.
+
+The idea is that any infrastructure you deploy ought to be deployable via automation, so that it is
+
+1. Always deployed the same way
+1. Deployed in a controlled fashion, from source code artifacts, under repeatable, well known governance. This intro does not deal with governance, but for work in an enterprise context, it's actually a vital elements.
+
+Concepts not yet being dealt with.
+
+1. How to put automation in a formal CI/CD context.
+
 ## Setup
 
 These are Windows centric instructions.
@@ -124,7 +139,7 @@ Deploy-CFStack -BucketName "a-unique-bucketname-xyz467" -FileName SampleCloudFor
 ## Notes
 
 - If not installed in VSC by default, you will want the Powershell extension!
-- Linters are plugins that find problems in language sytax
+- Linters are plugins that find problems in language sytax in files for a given language.
 - I have the CloudFormation (by aws-scripting-guy) and CloudFormation Linter (kdddejong) extensions installed in VSC. Very helpful.
 - [Sample CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html)
 - [CloudFormation user guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
