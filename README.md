@@ -56,7 +56,8 @@ These are Windows centric instructions.
    - [For Windows](https://gitforwindows.org/)
 1. [Setup an AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
    - register it to YOURGMAIL+mainAWSAccount@gmail.com
-The suffix after '+' lets you spin off an apparently new email address everytime you need to. Since every AWS account you create needs a unique address, this lets you use one email address and still have multiple email identities. Gmail will still deliver to YOURGMAIL@gmail.com, it ignores the +suffix. I don't know if other email providers do this. Use whatever suffix scheme suits you.
+
+The suffix after '+' lets you spin off an apparently new email address everytime you need to. Since every AWS account you create needs a unique address, this lets you use one email address and still have multiple email accounts in AWS (you'll want to do this as you get more advanced in AWS). Gmail will still deliver to YOURGMAIL@gmail.com, it ignores the '+suffix'. I don't know if other email providers do this. Use whatever suffix scheme suits you.
 1. [Get Visual Studio Code](https://code.visualstudio.com)
 1. [Install the AWS CLI]( https://awscli.amazonaws.com/AWSCLIV2.msi)
 1. Install the AWS Extensions:
