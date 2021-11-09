@@ -56,6 +56,7 @@ These are Windows centric instructions.
    - [For Windows](https://gitforwindows.org/)
 1. [Setup an AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
    - register it to YOURGMAIL+mainAWSAccount@gmail.com
+The suffix after '+' lets you spin off an apparently new email address everytime you need to. Since every AWS account you create needs a unique address, this lets you use one email address and still have multiple email identities. Gmail will still deliver to YOURGMAIL@gmail.com, it ignores the +suffix. I don't know if other email providers do this. Use whatever suffix scheme suits you.
 1. [Get Visual Studio Code](https://code.visualstudio.com)
 1. [Install the AWS CLI]( https://awscli.amazonaws.com/AWSCLIV2.msi)
 1. Install the AWS Extensions:
@@ -118,7 +119,7 @@ These are Windows centric instructions.
 
 ## Working in CloudFormation
 
-See Notes for two helpful extensions.
+See Notes for two helpful extensions in VSC.
 
 If you have installed recommend extensions, you can do `Control-Shift-P` for command palette in VSC and then type CloudFormation, you should see a command named "AWS: Create New CloudFormation Template". This gives you a barebones starting layout. Save that file with the following contens, as, for example, SampleCloudFormationTemplate.yaml.
 
@@ -157,7 +158,7 @@ Deploy-CFStack -BucketName "a-unique-bucketname-xyz467" -FileName SampleCloudFor
 ```
 
 - Go to CloudFormation in the console and view the stack that you just created.
-- In CloudFormation, check out the resources of the stack, in CloudFormation. Your bucket should be there as a resource.
+- In CloudFormation, check out the resources of the stack. Your bucket should be there as a resource.
 - Go look in S3 in the console and see your bucket that way, as well.
 
 ## Cleanup
@@ -169,7 +170,7 @@ Deploy-CFStack -BucketName "a-unique-bucketname-xyz467" -FileName SampleCloudFor
 
 ### How to clean up
 
-This should really be done in scripts!! Delete the CloudFormation template via script. What aws cli command is this? Delete extraneous S3 buckets via script.  What command?
+This should really be done in scripts!! Delete the CloudFormation stack from CF service via script. What aws cli command is this? Delete extraneous S3 buckets via script.  What CLI commands?
 
 ## Notes
 
