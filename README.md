@@ -34,7 +34,7 @@ The idea is that any infrastructure you deploy ought to be deployable via automa
 
 ### Declarative infrastructure as code tools
 
-Usually, a declarative provisioning tool, such as AWS's CloudFormation (or, as an exapmle of a cloud agnostic tool, Terraform) is involved. However, the simplest form of infrastructure as code might just provision infrastructure via a scripting approach, which is at least automated and repeatable. There are distinct benefits to a provisioning tool, though. Such a tool can:
+Usually, a declarative provisioning tool, such as AWS's CloudFormation (or, as an example of a cloud agnostic tool, Terraform) is involved. However, the simplest form of infrastructure as code might just provision infrastructure via a scripting approach, which is at least automated and repeatable. There are distinct benefits to a provisioning tool, though. Such a tool can:
 
 1. track dependencies between infrastructure resources, and protect dependent resources by refusing to delete other resources (which the dependent resources need).
 1. document the state of resources more fully (the tool itself is a place to inspect the intended state)
