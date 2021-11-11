@@ -59,6 +59,7 @@ These are Windows centric instructions.
 1. [Get Visual Studio Code](https://code.visualstudio.com)
 1. Also install command line Git (VSC will come with Git support, but you want to have command line git, too.
    - [For Windows](https://gitforwindows.org/)
+  
   This may ask you for a lot of choices to make. You can start by accepting defaults. Laster, you can change settings, if you want to or reinstall. (Todo: give some better helps on these choices!)
 1. [Install the AWS CLI]( https://awscli.amazonaws.com/AWSCLIV2.msi)
 1. Install the AWS Extensions:
