@@ -58,7 +58,7 @@ These are Windows centric instructions.
    The suffix after '+', 'mainAWSAccount' lets you spin off an apparently new email address everytime you need to. Since every AWS account you create needs a unique address, this lets you use one email address and still have multiple email accounts in AWS (you'll want to do this as you get more advanced in AWS). Gmail will still deliver to YOURGMAIL@gmail.com, it ignores the '+suffix'. I don't know if other email providers do this. Use whatever suffix scheme suits you.
 1. [Get Visual Studio Code](https://code.visualstudio.com)
 1. Also install command line Git (VSC will come with Git support, but you want to have command line git, too.
-   - [For Windows](https://gitforwindows.org/)
+  - [Git for Windows](https://gitforwindows.org/)
   
   This may ask you for a lot of choices to make. You can start by accepting defaults. Laster, you can change settings, if you want to or reinstall. (Todo: give some better helps on these choices!)
 1. [Install the AWS CLI]( https://awscli.amazonaws.com/AWSCLIV2.msi)
